@@ -9,10 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Test {
 	public static void main(String[] args) throws InterruptedException {
 		
-        final String page = "http://www.bershka.com";
-        By btn = By.id("myAccountIco");
-        By email = By.cssSelector("#logonForm > ul > li.formControl.labeled.first > div > input");
-        By password = By.cssSelector("#logonForm > ul > li.formControl.labeled.passLogin > bsk-password > ng-form > div > input");
+        final String page123 = "http://www.bershka.com";
+        By btn123 = By.id("myAccountIco");
+        By email123 = By.cssSelector("#logonForm > ul > li.formControl.labeled.first > div > input");
+        By password123 = By.cssSelector("#logonForm > ul > li.formControl.labeled.passLogin > bsk-password > ng-form > div > input");
         By iniciar123 = By.cssSelector("#login-submit");
         By countryBtn123 = By.cssSelector("#iPageContent > div.wwWrapper > ul > li.formControl.noPaddingBottom > button");
         By search123 = By.cssSelector("#menuContainer > div.header__searchMobile.mobile.menu-item > span");
@@ -36,12 +36,12 @@ public class Test {
         //driver.findElement(genero).click();
         //Thread.sleep(1000);
         
-        driver.findElement(btn).click();
+        driver.findElement(btn123).click();
         Thread.sleep(1000);
 
-        driver.findElement(email).sendKeys("debugers.amaris4@gmail.com");
+        driver.findElement(email123).sendKeys("debugers.amaris4@gmail.com");
         
-        driver.findElement(password).sendKeys("Correct22");
+        driver.findElement(password123).sendKeys("Correct22");
         Thread.sleep(1000);
 
         driver.findElement(iniciar123).click();
