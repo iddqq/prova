@@ -13,16 +13,16 @@ public class Test {
         By btn = By.id("myAccountIco");
         By email = By.cssSelector("#logonForm > ul > li.formControl.labeled.first > div > input");
         By password = By.cssSelector("#logonForm > ul > li.formControl.labeled.passLogin > bsk-password > ng-form > div > input");
-        By iniciar = By.cssSelector("#login-submit");
-        By countryBtn = By.cssSelector("#iPageContent > div.wwWrapper > ul > li.formControl.noPaddingBottom > button");
-        By search = By.cssSelector("#menuContainer > div.header__searchMobile.mobile.menu-item > span");
-        By buscador = By.cssSelector("body > div.inline-search-container > div.inline-search-bar > search-bar > div > div > input.search-field.hide-mobile.ng-pristine.ng-untouched.ng-valid.ng-empty");
+        By iniciar123 = By.cssSelector("#login-submit");
+        By countryBtn123 = By.cssSelector("#iPageContent > div.wwWrapper > ul > li.formControl.noPaddingBottom > button");
+        By search123 = By.cssSelector("#menuContainer > div.header__searchMobile.mobile.menu-item > span");
+        By buscador123 = By.cssSelector("body > div.inline-search-container > div.inline-search-bar > search-bar > div > div > input.search-field.hide-mobile.ng-pristine.ng-untouched.ng-valid.ng-empty");
 
         
         //steps
         
         
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\BOLIVER\\Desktop\\Selenium Libreries\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\MLUCENTE\\Desktop\\Selenium Libreries\\chromedriver_win32\\chromedriver.exe");
         
         WebDriver driver = new ChromeDriver();
         
@@ -30,7 +30,7 @@ public class Test {
         
         driver.manage().window().maximize();
         
-        driver.findElement(countryBtn).click();
+        driver.findElement(countryBtn123).click();
         Thread.sleep(1000);
         
         //driver.findElement(genero).click();
@@ -44,13 +44,13 @@ public class Test {
         driver.findElement(password).sendKeys("Correct22");
         Thread.sleep(1000);
 
-        driver.findElement(iniciar).click();
+        driver.findElement(iniciar123).click();
         Thread.sleep(1000);
         
-        driver.findElement(search).click();
+        driver.findElement(search123).click();
         
       
-        driver.findElement(buscador).sendKeys("zapatos", Keys.ENTER);
+        driver.findElement(buscador123).sendKeys("zapatos", Keys.ENTER);
         Thread.sleep(3000);
 
         //driver.findElement(buscador).click();
