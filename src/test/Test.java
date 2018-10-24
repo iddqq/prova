@@ -26,7 +26,7 @@ public class Test {
         
         WebDriver driver = new ChromeDriver();
         
-        driver.get(page123);
+        driver.get(page);
         
         driver.manage().window().maximize();
         
